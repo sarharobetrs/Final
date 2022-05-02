@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang = "en">	
+	
+	<!-- 
+	Sarah Roberts
+	Southern Illinois University Carbondale
+	Final Project May 2,2022
+	Date Tested: May 2, 2022
+	Date Produced:
+	-->
+	<head>
+		<style>
+			body{
+				font-family: source-sans-pro, sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				max-width: 900px;
+				margin: auto;
+				padding: 2px;
+				background-color: pink;
+			}
+			h2{
+				font-size: 30px;
+				text-align: center;
+			}
+			h6{
+				font-family: source-sans-pro, sans-serif;
+				font-weight: 400;
+				font-style: normal;
+				max-width: 900px;
+				margin: auto;
+				padding: 2px;
+				font-size: 15px;
+			}
+			.column {
+				float: left;
+				max-width: 50%;
+				max-height: 75%;
+			}
+			.row:after {
+				content: ""
+				display: table;
+				clear: both;
+			}
+			ul{
+				list-style-type: none;
+				margin: 0;
+				padding: 5;
+				text-align: center;
+				border-bottom: none;
+			}
+
+			li{
+				display: inline;
+			}
+		</style>
+		
+		<meta charset="utf-8">
+		<title> The Art of Card Making </title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="styles/SlickNav-1.0.10/dist/slicknav.min.css"/>
+		<script src="styles/SlickNav-1.0.10/dist/jquery.slicknav.min.js"></script>
+		</head>
+	
+	<body>
+		<h2> Contact Us! </h2>
+		<nav id="nav menu">
+				<ul>
+					<li><a href="index.html" class="current"> Home </a></li>
+					<li><a href="sales.htm" class="lastitem"> Sales </a></li>
+					<li><a href="tutorials.htm"> Tutorials </a></li>
+					<li><a href="history.htm"> History </a></li>
+					<li><a href="contact.htm" class="pizza"> Contact Us! </a></li>
+				</ul>
+			</nav>
+			<!-- Navigation Menu -->
+		<div class="row">
+		<div class="column" style="background-color:darkseagreen">
+			<h6> Who are you contacting? </h6>
+			<p> We are a family run company based in Arkansas. Our company head is Jane and her second in command is her husband John. </p>
+			</div>
+			<div class="column" style="background-color: mediumseagreen">
+			<h6> Reasons to Contact Us... </h6>
+			<p> We love to hear from you! As visitors to our company, your experience is vital to our success. Let us know if you need anything or want to see more of something! </p></div>
+		</div>
+		<br>
+	<h1> Please complete the following survey: </h1>
+	<body>
+	<form name="contactform" action="survety_data.html" method="get">
+		
+	<input type="radio" id="type" value="1">
+	<label for="type">Inquiry </label><br>
+	<input type="radio" id="type" value="2">
+	<label for="product"> Product Related</label>
+		
+	<h6>Contact information</h6>
+	<label for="email">Email address:</label>
+	<input type="email" name="email" id="email" autofocus required><br>
+	<label for="firstname">First name:</label>
+	<input type="text" name="firstname" id="firstname" required><br>
+	<label for="lastname"> Last name:</label>
+	<input type="text" name="lastname" id="lastname" required><br>
+		   
+	<h6> Comment Box </h6>
+	<label for="comment"> Comment Box </label>
+	<input type="text" name="comment" id="lastname" required><br>
+		
+	<h6>Thank you for contacting us!</h6>
+	<input type="submit" name="send" id="button" value="Submit">
+	<input type="reset" name="reset" id="reset">
+		</form>
+	</body>
+</html>
+	</body>

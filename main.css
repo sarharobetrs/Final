@@ -1,0 +1,87 @@
+body{
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	max-width: 900px;
+	margin: auto;
+	padding: 2px;
+	background-color: pink;
+}
+
+h6{
+	text-align: center;
+	padding: 40px;
+}
+
+h2 {
+	font-family: source-sans-pro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+img{
+	max-width: 23px;
+	border: .5px solid darkgreen;
+}
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+}
+
+li{
+	display: inline;
+}
+section .icon {
+    float: left;
+    margin-right: .5em;
+    margin-bottom: .3em;
+    width: 32px;
+    transition: width 2s ease;
+}
+section .icon:hover{
+    width: 64px;
+    transform: scale(2,2);
+    transform-origin: center;
+}
+/* Transformation */
+index{
+	@media print {
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 900px;
+            margin: 0 auto;
+            padding: 0;
+            border: 3px solid steelblue;
+            box-shadow: 0 10px 20px 10px;
+        }
+        section{
+            width: auto;
+            padding-left:0;
+            padding-right: 0;
+        }section h1, section h2 {
+             font-family: Arial, Arial, Helvetica, sans-serif;
+         }
+         section h1 {
+             border-bottom: 3px solid black;
+         }
+         footer{
+             border-top: 2px solid black;
+         }
+         header, #nav_menu, aside, img {
+             display: none;
+         }
+		.slicknav_menu {
+			display:none;}
+}
+
+    }
+	/* Media Query to Print the Page */
+	@media (max-width: 400px) {
+  .flex-grid {
+    display: block;
+  }
+}
+}
